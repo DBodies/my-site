@@ -1,0 +1,44 @@
+.firstSection-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.wrapperForText {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+filter: drop-shadow(50px 0 100px rgb(116, 28, 116));
+}
+.myName {
+    font-weight: 400;
+font-size: 80px;
+color: #ffffff;
+margin-bottom: 24px;
+ text-shadow: 0 0 10px rgba(116, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+.btnWriteMe {
+    font-weight: 400;
+font-size: 32px;
+padding: 24px 60px;
+border-radius: 24px;
+background: linear-gradient(90deg, #490553 0%, #630e70 15.5%, #7e178d 31.5%, #c146d4 58%, #5792ff 99.5%);
+
+margin-right: 30px;
+}
+.readMoreLink {
+        font-weight: 400;
+font-size: 32px;
+padding: 24px 30px;
+border: 2px solid #ffffff;
+border-radius: 24px;
+}
+.wrapperForBtn {
+}
+.firstBodyPNG {
+    position: relative;
+        display: flex;
+    margin-left: auto;
+    padding-right: 100px;
+filter: drop-shadow(0 0 55px #741c74);
+}

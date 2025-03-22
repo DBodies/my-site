@@ -1,0 +1,120 @@
+
+.thirdSection-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.thirdSection-title {
+    font-weight: 400;
+font-size: 80px;
+color: var(--white-color);
+margin-bottom: 100px;
+}
+
+.wrapperForEducations {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid var(--white-color);
+    border-radius: 16px;
+        position: relative;
+    animation: glowEffectFlow 6s ease-in-out infinite;
+}
+
+.wrapperForEducations:nth-child(1) {
+    animation-delay: 0s;
+}
+.wrapperForEducations:nth-child(2) {
+        animation-delay: 2s;
+}
+.wrapperForEducations:nth-child(3) {
+        animation-delay: 4s;
+}
+
+@keyframes glowEffectFlow {
+  0%, 25% {
+    box-shadow: inset 0px 0px 35px rgba(169, 98, 255, 0.8);
+  }
+  50% {
+    box-shadow: inset 0px 0px 5px rgba(169, 98, 255, 0.5);
+  }
+  75%, 100% {
+    box-shadow: inset 0px 0px 0px rgba(169, 98, 255, 0);
+  }
+}
+
+.wrapperForList {
+display: flex;
+flex-direction: row;
+margin: 0 auto;
+}
+
+.nameOfKnowledgePlace {
+    font-weight: 700;
+font-size: 40px;
+    color: var(--white-color);
+    padding: 0 72px;
+    display: flex;
+    align-items: center;
+}
+
+.educationYears {
+ color: var(--white-color);
+ font-weight: 500;
+font-size: 24px;
+display: flex;
+padding:  62px 32px;
+align-items: flex-start;
+}
+
+.thirdSection-list {
+    display: flex;
+    flex-direction: column;
+gap: 14px;
+max-width: 1000px;
+padding: 72px 120px;
+   border: 3px solid var(--white-color);
+   border-right: none;
+   border-bottom: none;
+   border-top: none;
+margin-right: auto;
+}
+
+.nameOfKnowledgePlace.universityName {
+    padding: 0 48px;
+}
+
+.courses {
+    padding: 72px 120px;
+    position: relative;
+    left: -270px;
+}
+
+.coursesName {
+    padding: 0 68px;
+}
+
+.university {
+padding: 72px 120px;
+position: relative;
+left: -35px;
+}
+
+.thirdSection-items {
+    font-weight: 700;
+font-size: 40px;
+    color: var(--white-color);
+}
+
+.majorText {
+     color: var(--white-color);
+     font-weight: 500;
+font-size: 32px;
+}
+
+.Specialty {
+         color: var(--white-color);
+    font-weight: 500;
+font-size: 40px;
+}
+

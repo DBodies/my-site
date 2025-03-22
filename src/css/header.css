@@ -1,0 +1,77 @@
+.headerLink {
+  margin-right: 40px;
+}
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 76px;
+}
+.headerNavigation {
+  display: flex;
+  margin: 0 auto;
+}
+.headerList {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+}
+.headerItems {
+  margin: 0 auto;
+}
+.linkHeader {
+  font-weight: 400;
+  font-size: 32px;
+  color: #f7f0ff;
+}
+.svgDownload {
+  margin-left: 10px;
+}
+.headerBtnWrapper {
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.btnSwitcher {
+  display: flex;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  padding: 30px 50px;
+  border-radius: 20px;
+    background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+.spanLanguage {
+  color: white;
+  position: absolute;
+  right: 455px;
+  top: 40px;
+}
+.ukraine {
+  background: linear-gradient(180deg, #005BBB 50%, #FFD700 50%);}
+.usa {
+background-image: url(/src/img/usaFlagForBtn.png);
+      background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.resumeLinkDownload {
+}
+.btnDownload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  font-size: 32px;
+  color: #f7f0ff;
+    padding: 10px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
