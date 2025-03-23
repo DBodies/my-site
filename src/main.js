@@ -15,10 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 window.addEventListener('DOMContentLoaded', () => {
-console.log("DOMContentLoaded сработал");
   toggleLanguage()
   
-
   function loadComponent(id, file) {
     fetch(file)
       .then(response => response.text())
@@ -32,8 +30,8 @@ console.log("DOMContentLoaded сработал");
   loadComponent('secondSection', './src/components/secondSection.html');
   loadComponent('thirdSection', './src/components/thirdSection.html');
   loadComponent('fourthSection', './src/components/fourthSection.html');
-  // loadComponent('section5', 'components/main/section5.html');
-  // loadComponent('section6', 'components/main/section6.html');
-  // loadComponent('footer', 'components/footer/footer.html');
+  loadComponent('fifthSection', './src/components/fifthSection.html');
+  loadComponent('sixthSection', './src/components/sixthSection.html');
+  loadComponent('footer', './src/components/footer.html');
 });
 

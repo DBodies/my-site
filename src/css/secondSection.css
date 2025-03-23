@@ -32,7 +32,8 @@ font-size: 80px;
     counter-reset: item;
 }
 .linkPrivatBank {
-    font-size: 42px;
+    font-size: 48px;
+     text-shadow: 0 0 10px rgba(116, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.4);
 }
 .workItems {
     list-style-type: none;

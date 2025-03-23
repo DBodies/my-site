@@ -1,5 +1,25 @@
+import i18next from "i18next";
+
+i18next.init({
+  lng: 'en',
+  resources: {
+    en: {
+      translation: { 
+        about: 'About me'
+      }
+    },
+    uk: {
+      translation: {
+        about: "Про мене"
+      }
+    }
+  }
+})
+
+
+
 export function toggleLanguage() {
-  console.log("✅ toggleLanguage() вызвана");
+ 
 
   const waitForElement = (selector, callback) => {
     const element = document.querySelector(selector);
@@ -17,12 +37,13 @@ export function toggleLanguage() {
   };
 
   waitForElement("#languageSwitcher", (languageSwitcher) => {
-    console.log("✅ Кнопка найдена:", languageSwitcher);
-
-    const userLang = navigator.language || navigator.userLanguage
-    console.log("🌍 Язык браузера:", userLang);
-
-    const isEnglish = userLang.startsWith('en')
+  const userLang = navigator.language || navigator.userLanguage
+  const isEnglish = userLang.startsWith('en')
+  i18next.changeLanguage(isEnglish ? 'en' : 'uk')
+    
+    languageSwitcher.textContent = i18next.t('')
+    
+updateTranslations()
 
     if (isEnglish) {
       languageSwitcher.classList.add('usa')
@@ -34,12 +55,22 @@ export function toggleLanguage() {
       if (languageSwitcher.classList.contains("ukraine")) {
         languageSwitcher.classList.remove("ukraine");
         languageSwitcher.classList.add("usa");
-        console.log("🇺🇸 Переключено на английский");
+i18next.changeLanguage('en');
       } else {
         languageSwitcher.classList.remove("usa");
         languageSwitcher.classList.add("ukraine");
-        console.log("🇺🇦 Переключено на украинский");
+i18next.changeLanguage('uk');
       }
+      updateTranslations()
     });
   });
+}
+function updateTranslations() {
+  const elementsToTranslate = document.querySelectorAll(["id"])
+  
+
+  elementsToTranslate.forEach((el) => {
+    const key = el.id
+    el.textContent = i18next.t(key)
+  })
 }

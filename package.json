@@ -12,6 +12,9 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "gsap": "^3.12.7",
+    "i18n": "^0.15.1",
+    "i18next": "^24.2.3",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.1"
   }

@@ -1,0 +1,48 @@
+.fourthSection-title {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 80px;
+  text-align: center;
+}
+.skillsContainer {
+      text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+}
+.skillButton {
+      padding: 20px 40px;
+  font-size: 18px;
+  border: 2px solid rgb(255, 255, 255);
+border-radius: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s;
+  color: var(--white-color);
+}
+
+.skill-button:hover {
+  transform: scale(1.1);
+}
+
+.skillsList {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Чтобы текст появлялся в нужном месте */
+}
+
+.soft {
+      font-size: 18px;
+  margin: 5px 0;
+}
+.tech {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.skillsText {
+  color: var(--white-color);
+}
