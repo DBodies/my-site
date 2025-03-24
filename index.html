@@ -1,281 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Site</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/css/style.css">
-</head>
-<body>
-
-  <header id="header">
-    <div class="container headerWrapper">
-  <a class="headerLink" href="/index.html">
-    <svg
-      width="210"
-      height="150"
-      viewBox="0 0 213 160"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M109.626 12H184.479V63.7297H147.428V59.6757V57.6757H145.428H109.626V12ZM107.626 57.6757V12V10H109.626H184.479H186.479V12V63.7297H201H203V65.7297V141.189V143.189H201H147.428V148V150H145.428H57.8093H55.8093V148V128.811H12H10V126.811V48.3243V46.3243H12H89.856H91.856V48.3243V57.6757H107.626ZM184.479 65.7297H147.428V87.4595H184.479V65.7297ZM147.428 89.4595H184.479H186.479V87.4595V65.7297H201V141.189H147.428V89.4595ZM145.428 87.4595V65.7297H126.148V87.4595H145.428ZM126.148 89.4595H145.428V141.189H126.148V89.4595ZM124.148 89.4595V141.189V143.189H126.148H145.428V148H57.8093V128.811H89.856H91.856V126.811V59.6757H107.626V87.4595V89.4595H109.626H124.148ZM124.148 87.4595H109.626V59.6757H145.428V63.7297H126.148H124.148V65.7297V87.4595ZM12 48.3243H89.856V57.6757H57.8093H55.8093V59.6757V126.811H12V48.3243ZM89.856 59.6757V126.811H57.8093V59.6757H89.856Z"
-        fill="#F7F0FF"
-      />
-    </svg>
-  </a>
-  <nav class="headerNavigation">
-    <ul class="headerList">
-      <li class="headerItems"><a href="#secondSection" data-i18n="about" class="linkHeader">About me</a></li>
-      <li class="headerItems"><a href="#thirdSection" data-i18n="education" class="linkHeader">Education</a></li>
-      <li class="headerItems"><a href="#fourthSection" data-i18n="skills" class="linkHeader">Skills</a></li>
-      <li class="headerItems"><a href="#fifthSection" data-i18n="projects" class="linkHeader">Projects</a></li>
-      <li class="headerItems"><a href="#sixthSection" data-i18n="contact" class="linkHeader">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="headerBtnWrapper">
-    <button id="languageSwitcher" class="btnSwitcher" type="button">EN</button>
-    <a class="resumeLinkDownload" download href="">
-      <button class="btnDownload" data-i18n="resume" id="resume" type="button">
-        Resume
-      </button>
-    </a>
-  </div>
-</div>
-</header>
-  
-<main>
-  <section id="firstSection">
-    <div class="container firstSection-wrapper">
-  <div class="wrapperForText">
-    <h1 class="myName" data-i18n="myName" id="myName">Hi, i'm Denis</h1>
-    <div class="wrapperForBtn">
-      <a href="#sixthSection"><button class="btnWriteMe" type="button" data-i18n="writeMe" id="writeMe">Write me</button></a>
-      <a href="#secondSection" class="readMoreLink" data-i18n="readMore" id="readMore"
-        >Read more
-      ></a>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container headerWrapper">
+        <a class="headerLink" href="/index.html">
+          <svg
+            width="210"
+            height="150"
+            viewBox="0 0 213 160"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M109.626 12H184.479V63.7297H147.428V59.6757V57.6757H145.428H109.626V12ZM107.626 57.6757V12V10H109.626H184.479H186.479V12V63.7297H201H203V65.7297V141.189V143.189H201H147.428V148V150H145.428H57.8093H55.8093V148V128.811H12H10V126.811V48.3243V46.3243H12H89.856H91.856V48.3243V57.6757H107.626ZM184.479 65.7297H147.428V87.4595H184.479V65.7297ZM147.428 89.4595H184.479H186.479V87.4595V65.7297H201V141.189H147.428V89.4595ZM145.428 87.4595V65.7297H126.148V87.4595H145.428ZM126.148 89.4595H145.428V141.189H126.148V89.4595ZM124.148 89.4595V141.189V143.189H126.148H145.428V148H57.8093V128.811H89.856H91.856V126.811V59.6757H107.626V87.4595V89.4595H109.626H124.148ZM124.148 87.4595H109.626V59.6757H145.428V63.7297H126.148H124.148V65.7297V87.4595ZM12 48.3243H89.856V57.6757H57.8093H55.8093V59.6757V126.811H12V48.3243ZM89.856 59.6757V126.811H57.8093V59.6757H89.856Z"
+              fill="#F7F0FF"
+            />
+          </svg>
+        </a>
+        <nav class="headerNavigation">
+          <ul class="headerList">
+            <li class="headerItems">
+              <a href="#secondSection" data-i18n="about" class="linkHeader"
+                >About me</a
+              >
+            </li>
+            <li class="headerItems">
+              <a href="#thirdSection" data-i18n="education" class="linkHeader"
+                >Education</a
+              >
+            </li>
+            <li class="headerItems">
+              <a href="#fourthSection" data-i18n="skills" class="linkHeader"
+                >Skills</a
+              >
+            </li>
+            <li class="headerItems">
+              <a href="#fifthSection" data-i18n="projects" class="linkHeader"
+                >Projects</a
+              >
+            </li>
+            <li class="headerItems">
+              <a href="#sixthSection" data-i18n="contact" class="linkHeader"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="headerBtnWrapper">
+          <button id="languageSwitcher" class="btnSwitcher" type="button">
+            EN
+          </button>
+          <a class="resumeLinkDownload" download href="">
+            <button
+              class="btnDownload"
+              data-i18n="resume"
+              id="resume"
+              type="button"
+            >
+              Resume
+            </button>
+          </a>
+        </div>
       </div>
-    <img class="firstBodyPNG" src="/src/img/firstBody.png" alt="body">
-</div>
-</section>
-  <section id="secondSection"><div class="container secondSection">
-  <div class="wrapperForSecondSection">
-    <h2 class="aboutMe" data-i18n="about">About me</h2>
-    <p class="dscrMe" data-i18n="myDscr">
-      I am a full-stack developer with experience in the banking industry. My
-      background helped me develop essential soft skills, which I now apply in
-      the IT field. I have been self-learning IT through courses and personal
-      curiosity. During my learning journey, I successfully completed more than
-      8 pet projects, focusing on [specific technologies or areas].
-      Additionally, I led a team project related to the completion of an
-      HTML+CSS course
-    </p>
-    <h3 class="workExp" data-i18n="workExp">Work experience</h3>
-    <ul class="workList">
-      <li class="workItems">
-        <a class="linkPrivatBank" data-i18n="privatBank" href="https://privatbank.ua/" target="_blank" ></a>
-        <p class="workTime" data-i18n="workTime"></p>
-      </li>
-      <li class="workItems" data-i18n="firstExp">
-        Experienced in working with international clients
-      </li>
-      <li class="workItems" data-i18n="secondExp">
-        Analyzed customer needs and provided personalized service
-      </li>
-      <li class="workItems" data-i18n="thirdExp">
-        Quickly adapted to changes in workflows and banking products.
-      </li>
-      <li class="workItems" data-i18n="fourthExp">
-        Met regulatory performance targets within set deadlines
-      </li>
-      <li class="workItems" data-i18n="fifthExp">
-        Complied with financial monitoring, risk management, anti-money
-        laundering, counter terrorism financing, and prevention of weapons of
-        mass destruction proliferation regulations
-      </li>
-    </ul>
-  </div>
-  <img class="secondBodyImg" src="/src/img/secondBody.png" alt="secondBody" />
-</div>
-</section>
-  <section id="thirdSection"><div class="container thirdSection-wrapper">
-    <h3 class="thirdSection-title" data-i18n="education"></h3>
-    <div class="wrapperForEducations">
-<p class="nameOfKnowledgePlace" data-i18n="college"></p>
-<div class="wrapperForList">
-<ul class="thirdSection-list">
-    <li class="thirdSection-items" data-i18n="nameOfCollege"></li>
-    <li class="thirdSection-items Specialty" data-i18n="specialty"></li>
-    <li class="thirdSection-items">
-        <p class="majorText" data-i18n="firstMajor"></p>
-    </li>
-    <li class="thirdSection-items">
-        <p class="majorText" data-i18n="secondMajor"></p>
-    </li>
-</ul>
-</div>
-<p class="educationYears">2017-2021</p>
-</div>
+    </header>
 
+    <main>
+      <section id="firstSection">
+        <div class="container firstSection-wrapper">
+          <div class="wrapperForText">
+            <h1 class="myName" data-i18n="myName" id="myName">Hi, i'm Denis</h1>
+            <div class="wrapperForBtn">
+              <a href="#sixthSection"
+                ><button
+                  class="btnWriteMe"
+                  type="button"
+                  data-i18n="writeMe"
+                  id="writeMe"
+                >
+                  Write me
+                </button></a
+              >
+              <a
+                href="#secondSection"
+                class="readMoreLink"
+                data-i18n="readMore"
+                id="readMore"
+                >Read more ></a
+              >
+            </div>
+          </div>
+          <img class="firstBodyPNG" src="/src/img/firstBody.png" alt="body" />
+        </div>
+      </section>
+      <section id="secondSection">
+        <div class="container secondSection">
+          <div class="wrapperForSecondSection">
+            <h2 class="aboutMe" data-i18n="about">About me</h2>
+            <p class="dscrMe" data-i18n="myDscr">
+              I am a full-stack developer with experience in the banking
+              industry. My background helped me develop essential soft skills,
+              which I now apply in the IT field. I have been self-learning IT
+              through courses and personal curiosity. During my learning
+              journey, I successfully completed more than 8 pet projects,
+              focusing on [specific technologies or areas]. Additionally, I led
+              a team project related to the completion of an HTML+CSS course
+            </p>
+            <h3 class="workExp" data-i18n="workExp">Work experience</h3>
+            <ul class="workList">
+              <li class="workItems">
+                <a
+                  class="linkPrivatBank"
+                  data-i18n="privatBank"
+                  href="https://privatbank.ua/"
+                  target="_blank"
+                ></a>
+                <p class="workTime" data-i18n="workTime"></p>
+              </li>
+              <li class="workItems" data-i18n="firstExp">
+                Experienced in working with international clients
+              </li>
+              <li class="workItems" data-i18n="secondExp">
+                Analyzed customer needs and provided personalized service
+              </li>
+              <li class="workItems" data-i18n="thirdExp">
+                Quickly adapted to changes in workflows and banking products.
+              </li>
+              <li class="workItems" data-i18n="fourthExp">
+                Met regulatory performance targets within set deadlines
+              </li>
+              <li class="workItems" data-i18n="fifthExp">
+                Complied with financial monitoring, risk management, anti-money
+                laundering, counter terrorism financing, and prevention of
+                weapons of mass destruction proliferation regulations
+              </li>
+            </ul>
+          </div>
+          <img
+            class="secondBodyImg"
+            src="/src/img/secondBody.png"
+            alt="secondBody"
+          />
+        </div>
+      </section>
+      <section id="thirdSection">
+        <div class="container thirdSection-wrapper">
+          <h3 class="thirdSection-title" data-i18n="education"></h3>
+          <div class="wrapperForEducations">
+            <p class="nameOfKnowledgePlace" data-i18n="college"></p>
+            <div class="wrapperForList">
+              <ul class="thirdSection-list">
+                <li class="thirdSection-items" data-i18n="nameOfCollege"></li>
+                <li
+                  class="thirdSection-items Specialty"
+                  data-i18n="specialty"
+                ></li>
+                <li class="thirdSection-items">
+                  <p class="majorText" data-i18n="firstMajor"></p>
+                </li>
+                <li class="thirdSection-items">
+                  <p class="majorText" data-i18n="secondMajor"></p>
+                </li>
+              </ul>
+            </div>
+            <p class="educationYears">2017-2021</p>
+          </div>
 
-    <div class="wrapperForEducations glowEffect">
-<p class="nameOfKnowledgePlace universityName" data-i18n="university"></p>
-<div class="wrapperForList">
-<ul class="thirdSection-list university">
-    <li class="thirdSection-items"><a href="" target="_blank" data-i18n="nameOfUniversity"></a></li>
-    <li class="thirdSection-items" data-i18n="specialty"></li>
-    <li class="thirdSection-items">
-        <p class="majorText" data-i18n="bachelor"></p>
-    </li>
-    <li class="thirdSection-items">
-        <p class="majorText" data-i18n="master"></p>
-    </li>
-</ul>
-</div>
-<p class="educationYears"  data-i18n="dataNowadays">2021-present</p>
-</div>
+          <div class="wrapperForEducations glowEffect">
+            <p
+              class="nameOfKnowledgePlace universityName"
+              data-i18n="university"
+            ></p>
+            <div class="wrapperForList">
+              <ul class="thirdSection-list university">
+                <li class="thirdSection-items">
+                  <a href="" target="_blank" data-i18n="nameOfUniversity"></a>
+                </li>
+                <li class="thirdSection-items" data-i18n="specialty"></li>
+                <li class="thirdSection-items">
+                  <p class="majorText" data-i18n="bachelor"></p>
+                </li>
+                <li class="thirdSection-items">
+                  <p class="majorText" data-i18n="master"></p>
+                </li>
+              </ul>
+            </div>
+            <p class="educationYears" data-i18n="dataNowadays">2021-present</p>
+          </div>
 
+          <div class="wrapperForEducations">
+            <p class="nameOfKnowledgePlace coursesName" data-i18n="courses"></p>
+            <div class="wrapperForList">
+              <ul class="thirdSection-list courses">
+                <li class="thirdSection-items">
+                  <a href="" data-i18n="goIT" target="_blank"></a>
+                </li>
+                <li
+                  class="thirdSection-items Specialty"
+                  data-i18n="specialty"
+                ></li>
+                <li class="thirdSection-items">
+                  <p class="majorText" data-i18n="fullStack"></p>
+                </li>
+              </ul>
+            </div>
+            <p class="educationYears" data-i18n="dataNowadaysCourse">
+              2021-present
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="fourthSection">
+        <div class="container">
+          <div class="wrapperForSkills">
+            <h4 class="fourthSection-title">Skills</h4>
+            <p class="nameOfSkills">Team lead</p>
 
-    <div class="wrapperForEducations">
-<p class="nameOfKnowledgePlace coursesName" data-i18n="courses"></p>
-<div class="wrapperForList">
-<ul class="thirdSection-list courses">
-    <li class="thirdSection-items"><a href="" data-i18n="goIT" target="_blank"></a></li>
-    <li class="thirdSection-items Specialty" data-i18n="specialty"></li>
-    <li class="thirdSection-items">
-        <p class="majorText" data-i18n="fullStack"></p>
-    </li>
-</ul>
-</div>
-<p class="educationYears" data-i18n="dataNowadaysCourse">2021-present</p>
-</div>
-</div>
-</section>
-  <section id="fourthSection"><div class="container">
-  <div class="wrapperForSkills">
-    <h4 class="fourthSection-title">Skills</h4>
-    <p class="nameOfSkills">Team lead</p>
+            <div class="wrapperForFirstRaw">
+              <p class="nameOfSkills2">SCSS</p>
+              <p class="nameOfSkills3">CSS</p>
+            </div>
 
-    <div class="wrapperForFirstRaw">
-      <p class="nameOfSkills2">SCSS</p>
-      <p class="nameOfSkills3">CSS</p>
-    </div>
+            <div class="wrapperForSecondRaw">
+              <p class="nameOfSkills14">GTD</p>
+              <p class="nameOfSkills15">Responsive design</p>
+              <p class="nameOfSkills16">OOP</p>
+            </div>
 
-    <div class="wrapperForSecondRaw">
-      <p class="nameOfSkills14">GTD</p>
-      <p class="nameOfSkills15">Responsive design</p>
-      <p class="nameOfSkills16">OOP</p>
-    </div>
-
-    <div class="wrapperForThirdRaw">
+            <div class="wrapperForThirdRaw">
               <p class="nameOfSkills8">React</p>
-      <p class="nameOfSkills9">Node.JS</p>
-      <p class="nameOfSkills10">HTML5</p>
-            <p class="nameOfSkills13">Java script</p>
-    </div>
+              <p class="nameOfSkills9">Node.JS</p>
+              <p class="nameOfSkills10">HTML5</p>
+              <p class="nameOfSkills13">Java script</p>
+            </div>
 
-    <div class="wrapperForFourthRaw">
-            <p class="nameOfSkills4">Webpack</p>
-      <p class="nameOfSkills5">Visual studio code</p>
-      <p class="nameOfSkills7">GIT</p>
-    </div>
+            <div class="wrapperForFourthRaw">
+              <p class="nameOfSkills4">Webpack</p>
+              <p class="nameOfSkills5">Visual studio code</p>
+              <p class="nameOfSkills7">GIT</p>
+            </div>
 
-    <div class="wrapperForFifthRaw">
-      <p class="nameOfSkills11">English - B1</p>
-      <p class="nameOfSkills12">Agile</p>
-    </div>
-    <p class="lastSkills">Scrum</p>
-  </div>
-</div>
-</section>
-  <section id="fifthSection"><div class="container">
-  <h5 class="fifthSection-title" data-i18n="projects">Projects</h5>
-  <div class="Projects">
-    <div class="firstProject">
-      <a
-        class="imgLink-fifthSection"
-        href="https://github.com/DBodies/Valentyn"
-        target="_blank"
-        ><img
-          src="/src/img/Valentyn@1x.png"
-          alt="valentynSite"
-          srcset="/src/img/Valentyn@2x.png"
-          height="712"
-      /></a>
-      <div class="wrapperForText-fifthSection">
-        <p class="siteTitle" data-i18n="titleFirstProject"></p>
-        <p class="siteDscr" data-i18n="dscrFirstProject">
-          
-        </p>
-        <p class="siteDscr" data-i18n="secondDscrFirstProject">
-         
-        </p>
-      </div>
-    </div>
-    <div class="firstProject reverse">
-      <a
-        class="imgLink-fifthSection linkReverse"
-        href="https://github.com/DBodies/project-Group-03"
-        target="_blank"
-        ><img
-          class="imgReverse"
-          src="/src/img/organic@1x.png"
-          alt="organic-vegetables"
-          srcset="/src/img/organic@2x.png"
-      /></a>
-      <div class="wrapperForText-fifthSection">
-        <p class="siteTitle" data-i18n="greenHarvest"></p>
-        <p class="siteDscr secondProject" data-i18n="secondProjectDscr">
-          
-        </p>
-        <p class="siteDscr secondProject" data-i18n="secondDscrSecondProject">
-          
-        </p>
-      </div>
-    </div>
-    <div class="firstProject">
-      <a
-        class="imgLink-fifthSection"
-        href="https://github.com/DBodies/Mustage"
-        target="_blank"
-        ><img
-          src="/src/img/mustage@1x.png"
-          alt="mustage"
-          srcset="/src/img/mustage@2x.png"
-      /></a>
-      <div class="wrapperForText-fifthSection">
-        <p class="siteTitle" data-i18n="mustage"></p>
-        <p class="siteDscr" data-i18n="firstDscrThirdProject">
-          
-        </p>
-        <p class="siteDscr">
- 
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-  <section id="sixthSection"><div class="container">
-<h6 class="sixthSection-title" data-i18n="contactMe"></h6>
-<div class="wrapper-for-contact">
-  <div class="text-to-contact">
-    <p class="writeMe" data-i18n="writeMe">Write me</p>
-    <p class="dscrText" data-i18n="requirements">
-    </p>
-    <a  class="linkContact" href="https://t.me/Dealpha1" target="_blank"><svg class="tgSvg" width="64" height="64">
-        <use href="/sprite.svg#icon-tg"></use>
-    </svg>@Dealpha1</a>
-        <a class="linkContact" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><svg class="tgSvg" width="64" height="64">
-        <use href="/sprite.svg#icon-gmail"></use>
-    </svg>dkovalevskiy02@gmail.com</a>
-  </div>
+            <div class="wrapperForFifthRaw">
+              <p class="nameOfSkills11">English - B1</p>
+              <p class="nameOfSkills12">Agile</p>
+            </div>
+            <p class="lastSkills">Scrum</p>
+          </div>
+        </div>
+      </section>
+      <section id="fifthSection">
+        <div class="container">
+          <h5 class="fifthSection-title" data-i18n="projects">Projects</h5>
+          <div class="Projects">
+            <div class="firstProject">
+              <a
+                class="imgLink-fifthSection"
+                href="https://github.com/DBodies/Valentyn"
+                target="_blank"
+                ><img
+                  src="/src/img/Valentyn@1x.png"
+                  alt="valentynSite"
+                  srcset="/src/img/Valentyn@2x.png"
+                  height="712"
+              /></a>
+              <div class="wrapperForText-fifthSection">
+                <p class="siteTitle" data-i18n="titleFirstProject"></p>
+                <p class="siteDscr" data-i18n="dscrFirstProject"></p>
+                <p class="siteDscr" data-i18n="secondDscrFirstProject"></p>
+              </div>
+            </div>
+            <div class="firstProject reverse">
+              <a
+                class="imgLink-fifthSection linkReverse"
+                href="https://github.com/DBodies/project-Group-03"
+                target="_blank"
+                ><img
+                  class="imgReverse"
+                  src="/src/img/organic@1x.png"
+                  alt="organic-vegetables"
+                  srcset="/src/img/organic@2x.png"
+              /></a>
+              <div class="wrapperForText-fifthSection">
+                <p class="siteTitle" data-i18n="greenHarvest"></p>
+                <p
+                  class="siteDscr secondProject"
+                  data-i18n="secondProjectDscr"
+                ></p>
+                <p
+                  class="siteDscr secondProject"
+                  data-i18n="secondDscrSecondProject"
+                ></p>
+              </div>
+            </div>
+            <div class="firstProject">
+              <a
+                class="imgLink-fifthSection"
+                href="https://github.com/DBodies/Mustage"
+                target="_blank"
+                ><img
+                  src="/src/img/mustage@1x.png"
+                  alt="mustage"
+                  srcset="/src/img/mustage@2x.png"
+              /></a>
+              <div class="wrapperForText-fifthSection">
+                <p class="siteTitle" data-i18n="mustage"></p>
+                <p class="siteDscr" data-i18n="firstDscrThirdProject"></p>
+                <p class="siteDscr"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sixthSection">
+        <div class="container">
+          <h6 class="sixthSection-title" data-i18n="contactMe"></h6>
+          <div class="wrapper-for-contact">
+            <div class="text-to-contact">
+              <p class="writeMe" data-i18n="writeMe">Write me</p>
+              <p class="dscrText" data-i18n="requirements"></p>
+              <a
+                class="linkContact"
+                href="https://t.me/Dealpha1"
+                target="_blank"
+                ><svg class="tgSvg" width="64" height="64">
+                  <use href="/sprite.svg#icon-tg"></use></svg
+                >@Dealpha1</a
+              >
+              <a
+                class="linkContact"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                target="_blank"
+                ><svg class="tgSvg" width="64" height="64">
+                  <use href="/sprite.svg#icon-gmail"></use></svg
+                >dkovalevskiy02@gmail.com</a
+              >
+            </div>
             <form class="contactForm" id="contactForm">
               <label class="label" for="name"></label>
               <input
@@ -313,98 +385,140 @@
                 required
               />
               <button class="btnSubmit" id="sendMessageBtn" type="submit">
-                <span class="btnSubmitSpan" id="btnSubmit" data-i18n="submit">Submit</span>
+                <span class="btnSubmitSpan" id="btnSubmit" data-i18n="submit"
+                  >Submit</span
+                >
               </button>
             </form>
-</div>
-</div>
-</section>
-</main>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<footer id="footer"><div class="container">
-  <div class="footerWrapper">
-    <a class="headerLink" href="/index.html">
-      <svg
-        width="210"
-        height="150"
-        viewBox="0 0 213 160"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M109.626 12H184.479V63.7297H147.428V59.6757V57.6757H145.428H109.626V12ZM107.626 57.6757V12V10H109.626H184.479H186.479V12V63.7297H201H203V65.7297V141.189V143.189H201H147.428V148V150H145.428H57.8093H55.8093V148V128.811H12H10V126.811V48.3243V46.3243H12H89.856H91.856V48.3243V57.6757H107.626ZM184.479 65.7297H147.428V87.4595H184.479V65.7297ZM147.428 89.4595H184.479H186.479V87.4595V65.7297H201V141.189H147.428V89.4595ZM145.428 87.4595V65.7297H126.148V87.4595H145.428ZM126.148 89.4595H145.428V141.189H126.148V89.4595ZM124.148 89.4595V141.189V143.189H126.148H145.428V148H57.8093V128.811H89.856H91.856V126.811V59.6757H107.626V87.4595V89.4595H109.626H124.148ZM124.148 87.4595H109.626V59.6757H145.428V63.7297H126.148H124.148V65.7297V87.4595ZM12 48.3243H89.856V57.6757H57.8093H55.8093V59.6757V126.811H12V48.3243ZM89.856 59.6757V126.811H57.8093V59.6757H89.856Z"
-          fill="#F7F0FF"
-        />
-      </svg>
-    </a>
-    <p class="footerDenis" id="footerDenis" data-i18n="onlyMyName">Denis</p>
-    <p class="footerEmail">
-      <a
-        target="_blank"
-        href="mailto:dkovalevskiy02@gmail.com"
-        class="myEmail"
-        >dkovalevskiy02@gmail.com</a
-      >
-    </p>
+    <footer id="footer">
+      <div class="container">
+        <div class="footerWrapper">
+          <a class="headerLink" href="/index.html">
+            <svg
+              width="210"
+              height="150"
+              viewBox="0 0 213 160"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M109.626 12H184.479V63.7297H147.428V59.6757V57.6757H145.428H109.626V12ZM107.626 57.6757V12V10H109.626H184.479H186.479V12V63.7297H201H203V65.7297V141.189V143.189H201H147.428V148V150H145.428H57.8093H55.8093V148V128.811H12H10V126.811V48.3243V46.3243H12H89.856H91.856V48.3243V57.6757H107.626ZM184.479 65.7297H147.428V87.4595H184.479V65.7297ZM147.428 89.4595H184.479H186.479V87.4595V65.7297H201V141.189H147.428V89.4595ZM145.428 87.4595V65.7297H126.148V87.4595H145.428ZM126.148 89.4595H145.428V141.189H126.148V89.4595ZM124.148 89.4595V141.189V143.189H126.148H145.428V148H57.8093V128.811H89.856H91.856V126.811V59.6757H107.626V87.4595V89.4595H109.626H124.148ZM124.148 87.4595H109.626V59.6757H145.428V63.7297H126.148H124.148V65.7297V87.4595ZM12 48.3243H89.856V57.6757H57.8093H55.8093V59.6757V126.811H12V48.3243ZM89.856 59.6757V126.811H57.8093V59.6757H89.856Z"
+                fill="#F7F0FF"
+              />
+            </svg>
+          </a>
+          <p class="footerDenis" id="footerDenis" data-i18n="onlyMyName">
+            Denis
+          </p>
+          <p class="footerEmail">
+            <a
+              target="_blank"
+              href="mailto:dkovalevskiy02@gmail.com"
+              class="myEmail"
+              >dkovalevskiy02@gmail.com</a
+            >
+          </p>
 
-    <ul class="footerList">
-      <li class="footerItems">
-        <p class="textInLi" id="otherWays" data-i18n="waysToContact"></p>
-      </li>
-      <li class="footerItems">
-        <ul class="listInFooterList">
-          <li class="itemsInList">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/valentin-neelov-a515962b1/"
-              ><svg class="svgFooterContact" width="48" height="48">
-                <use href="/sprite.svg#icon-gmail"></use></svg
-            ></a>
-          </li>
-          <li class="itemsInList">
-            <a
-              target="_blank"
-              href="https://www.instagram.com/valinok_322?igsh=dmc3ZndtZ3NpeHBu"
-              ><svg class="svgFooterContact" width="48" height="48">
-                <use href="/sprite.svg#icon-git"></use></svg
-            ></a>
-          </li>
-          <li class="itemsInList">
-            <a
-              target="_blank"
-              href="https://t.me/Dealpha1"
-              ><svg class="svgFooterContact" width="48" height="48">
-                <use href="/sprite.svg#icon-tg"></use></svg
-            ></a>
-          </li>
-          <li class="itemsInList">
-            <a target="_blank" href="https://www.linkedin.com/in/denis-kovalevskiy-820a042b1/"
-              ><svg class="svgFooterContact" width="48" height="48">
-                <use href="/sprite.svg#icon-linkedin"></use></svg
-            ></a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <nav class="footerNav">
-      <p class="textNavigation" id="footerNav" data-i18n="navigation"></p>
-      <ul class="navList">
-        <li class="navItems"><a id="footerHome" data-i18n="general" href="#header"></a></li>
-        <li class="navItems"><a id="footerAboutMe" data-i18n="about" href="#secondSection"></a></li>
-        <li class="navItems"><a id="footerAboutMe" data-i18n="education" href="#thirdSection"></a></li>
-        <li class="navItems"><a id="footerSkills"  data-i18n="skills" href="#fourthSection"></a></li>
-        <li class="navItems"><a id="footerProject" data-i18n="projects" href="#fifthSection"></a></li>
-        <li class="navItems"><a id="footerContact" data-i18n="contact" href="#sixthSection"></a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="textWrapper">
-    <p class="lowerText" id="cooperate" data-i18n="beGladToCooperate"></p>
-  </div>
-</div></footer>
-<script src="https://unpkg.com/i18next@21.6.5/i18next.min.js"></script>
-<script type="module" src="./src/main.js"></script>
-</body>
+          <ul class="footerList">
+            <li class="footerItems">
+              <p class="textInLi" id="otherWays" data-i18n="waysToContact"></p>
+            </li>
+            <li class="footerItems">
+              <ul class="listInFooterList">
+                <li class="itemsInList">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/valentin-neelov-a515962b1/"
+                    ><svg class="svgFooterContact" width="48" height="48">
+                      <use href="/sprite.svg#icon-gmail"></use></svg
+                  ></a>
+                </li>
+                <li class="itemsInList">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/valinok_322?igsh=dmc3ZndtZ3NpeHBu"
+                    ><svg class="svgFooterContact" width="48" height="48">
+                      <use href="/sprite.svg#icon-git"></use></svg
+                  ></a>
+                </li>
+                <li class="itemsInList">
+                  <a target="_blank" href="https://t.me/Dealpha1"
+                    ><svg class="svgFooterContact" width="48" height="48">
+                      <use href="/sprite.svg#icon-tg"></use></svg
+                  ></a>
+                </li>
+                <li class="itemsInList">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/denis-kovalevskiy-820a042b1/"
+                    ><svg class="svgFooterContact" width="48" height="48">
+                      <use href="/sprite.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <nav class="footerNav">
+            <p class="textNavigation" id="footerNav" data-i18n="navigation"></p>
+            <ul class="navList">
+              <li class="navItems">
+                <a id="footerHome" data-i18n="general" href="#header"></a>
+              </li>
+              <li class="navItems">
+                <a
+                  id="footerAboutMe"
+                  data-i18n="about"
+                  href="#secondSection"
+                ></a>
+              </li>
+              <li class="navItems">
+                <a
+                  id="footerAboutMe"
+                  data-i18n="education"
+                  href="#thirdSection"
+                ></a>
+              </li>
+              <li class="navItems">
+                <a
+                  id="footerSkills"
+                  data-i18n="skills"
+                  href="#fourthSection"
+                ></a>
+              </li>
+              <li class="navItems">
+                <a
+                  id="footerProject"
+                  data-i18n="projects"
+                  href="#fifthSection"
+                ></a>
+              </li>
+              <li class="navItems">
+                <a
+                  id="footerContact"
+                  data-i18n="contact"
+                  href="#sixthSection"
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="textWrapper">
+          <p class="lowerText" id="cooperate" data-i18n="beGladToCooperate"></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/i18next@21.6.5/i18next.min.js"></script>
+    <script type="module" src="./src/js/izitoast.js"></script>
+    <script type="module" src="./src/js/languageSwitcher.js"></script>
+    <script type="module" src="./src/js/resumeDownload.js"></script>
+    <script type="module" src="./src/js/sendMessage.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>

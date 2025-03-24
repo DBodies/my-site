@@ -15,6 +15,3 @@ export function notification() {
     });
 }
 
-// service_yomwbu2
-// template_i7l8zjo
-// lD41kOe9na7NQa9RS 
