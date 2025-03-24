@@ -29,6 +29,7 @@ margin-bottom: 64px;
     gap: 32px;
     max-width: 800px;
     justify-content: center;
+
 }
 .siteTitle {
     font-weight: 700;
@@ -50,4 +51,5 @@ color: var(--white-color);
 .linkReverse {
     margin-right: 0;
     margin-left: 60px;
+          box-shadow: -400px -2300px 500px rgba(169, 98, 255, 0.2);
 }

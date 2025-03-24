@@ -30,6 +30,8 @@ font-size: 80px;
     display: flex;
     flex-direction: column;
     counter-reset: item;
+        position: relative;
+    left: -30px;
 }
 .linkPrivatBank {
     font-size: 48px;

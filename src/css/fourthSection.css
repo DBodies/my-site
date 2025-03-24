@@ -4,45 +4,62 @@
   font-size: 80px;
   text-align: center;
 }
-.skillsContainer {
-      text-align: center;
-  margin-top: 50px;
+
+.wrapperForSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+
+.wrapperForSkills .nameOfSkills15 {
+}
+
+.wrapperForSkills p {
+  color: var(--white-color);
+  font-weight: 400;
+font-size: 48px;
+}
+
+.nameOfSkills {
+  text-align: center;
+}
+.wrapperForFirstRaw {
   display: flex;
   justify-content: center;
-  gap: 500px;
-}
-.skillButton {
-      padding: 20px 40px;
-  font-size: 18px;
-  border: 2px solid rgb(255, 255, 255);
-border-radius: 16px;
-  cursor: pointer;
-  margin: 10px;
-  transition: transform 0.2s;
-  color: var(--white-color);
+  gap: 640px;
 }
 
-.skill-button:hover {
-  transform: scale(1.1);
+.wrapperForSecondRaw {
+  display: flex;
+  justify-content: center;
+  gap: 340px  ;
+} 
+
+.nameOfSkills5 {
+  position: relative;
+    left: -50px;
 }
 
-.skillsList {
-    display: none;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    position: absolute; /* Чтобы текст появлялся в нужном месте */
+.wrapperForThirdRaw {
+    display: flex;
+  justify-content: center;
+  gap: 400px;
 }
 
-.soft {
-      font-size: 18px;
-  margin: 5px 0;
+.wrapperForFourthRaw {
+      display: flex;
+  justify-content: center;
+  gap: 400px;
+
 }
-.tech {
-  font-size: 18px;
-  margin: 5px 0;
+
+.wrapperForFifthRaw {
+      display: flex;
+  justify-content: center;
+  gap: 600px;
 }
-.skillsText {
-  color: var(--white-color);
+
+.lastSkills {
+  text-align: center;
 }

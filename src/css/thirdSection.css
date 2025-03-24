@@ -100,6 +100,11 @@ position: relative;
 left: -35px;
 }
 
+.ua-lang.university {
+    position: relative;
+    left: 30px;
+}
+
 .thirdSection-items {
     font-weight: 700;
 font-size: 40px;

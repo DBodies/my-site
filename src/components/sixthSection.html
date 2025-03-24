@@ -1,11 +1,9 @@
 <div class="container">
-<h6 class="sixthSection-title">Contact me</h6>
+<h6 class="sixthSection-title" data-i18n="contactMe"></h6>
 <div class="wrapper-for-contact">
   <div class="text-to-contact">
-    <p class="writeMe">Write me</p>
-    <p class="dscrText">
-      If my skills match your requirements, I am ready to discuss further steps.
-      You can contact me by email.
+    <p class="writeMe" data-i18n="writeMe">Write me</p>
+    <p class="dscrText" data-i18n="requirements">
     </p>
     <a  class="linkContact" href="https://t.me/Dealpha1" target="_blank"><svg class="tgSvg" width="64" height="64">
         <use href="/sprite.svg#icon-tg"></use>
@@ -21,6 +19,7 @@
                 id="name"
                 name="name"
                 placeholder="Enter your name"
+                data-i18n="name"
                 required
               />
               <label class="label" for="email"></label>
@@ -29,6 +28,7 @@
                 id="email"
                 name="email"
                 placeholder="Enter your email"
+                data-i18n="email"
                 required
               />
               <label class="label" for="title"></label>
@@ -37,6 +37,7 @@
                 id="title"
                 name="title"
                 placeholder="Enter title"
+                data-i18n="title"
               />
               <label class="label" for="message"></label>
               <input
@@ -44,10 +45,11 @@
                 id="message"
                 name="message"
                 placeholder="Enter your message"
+                data-i18n="message"
                 required
               />
-              <button class="btnSubmit" type="submit">
-                <span class="btnSubmitSpan" id="btnSubmit">Submit</span>
+              <button class="btnSubmit" id="sendMessageBtn" type="submit">
+                <span class="btnSubmitSpan" id="btnSubmit" data-i18n="submit">Submit</span>
               </button>
             </form>
 </div>
