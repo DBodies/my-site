@@ -1,7 +1,7 @@
-import { langSwitcher } from "./js/languageSwitcher";
-import { setupResume } from "./js/resumeDownload";
-import { notification } from "./js/izitoast";
-import { sendMessageToEmail } from "./js/sendMessage";
+import { langSwitcher } from "/src/js/languageSwitcher";
+import { setupResume } from "/src/js/resumeDownload";
+import { notification } from "/src/js/izitoast";
+import { sendMessageToEmail } from "/src/js/sendMessage";
 
 
 window.addEventListener('DOMContentLoaded', async () => {
